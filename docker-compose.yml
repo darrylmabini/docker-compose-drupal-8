@@ -29,6 +29,7 @@ services:
       - ./src/sites:/var/www/html/sites
       - ./src/modules:/var/www/html/modules
       - ./src/themes:/var/www/html/themes
+      - ./src/profiles:/var/www/html/profiles
 
   webserver:
     image: nginx:1.17.4-alpine
@@ -43,7 +44,8 @@ services:
       - ./src/sites:/var/www/html/sites
       - ./src/modules:/var/www/html/modules
       - ./src/themes:/var/www/html/themes
-      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./src/profiles:/var/www/html/profiles
+      - ./docker/nginx/conf.d:/etc/nginx/conf.d
     networks:
       - internal
       - external
