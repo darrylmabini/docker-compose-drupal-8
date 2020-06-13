@@ -83,7 +83,7 @@ MYSQL_PASSWORD=drupal_database_password
 docker-compose up -d
 ```
 
-Once all the containers are running, you can now visit the Drupal site in your favorite browser ([http://localhost/](http://localhost/)).
+Once all the containers are running, you can now visit the Drupal site in your favorite browser ([http://localhost/](http://localhost/)){:target="\_blank"}.
 
 ### Stopping containers
 
