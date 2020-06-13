@@ -1,6 +1,7 @@
 # Drupal 8 Docker Compose Development
 
 - [Overview](#overview)
+- [Directory Structure](#directory-structure)
 - [Requirements](#requirements)
 - [Installation](#installation)
   - [Starting Containers](#starting-containers)
@@ -17,7 +18,23 @@ This stack is to easily setup [Drupal 8](https://www.drupal.org/8) local develop
 - [MySQL](https://hub.docker.com/_/mysql)
 - [NGINX](https://hub.docker.com/_/nginx)
 
-To improve the performance specially on Mac users that are experiencing slowness on mounted volumes, this only mounts the necessary directories in drupal development which are the sites, modules and themes directories.
+To improve the performance specially on Mac users that are experiencing slowness on mounted volumes, this only mounts the necessary directories in drupal development which are the **sites**, **modules** and **themes** directories.
+
+## Directory Structure
+
+- **/drupal-data/modules** - The directory into which all custom (created by you) and contributed (created by community) modules go.
+
+  - Splitting this up into the sub-directories contrib and custom can make it easier to keep track of the modules. You can create subfolders for organization to match your development, storage, usage standards.
+
+- **/drupal-data/profiles** - All contributed and custom installation profiles.
+
+- **/drupal-data/sites** - Site specific modules and themes can be moved into these directories to avoid them showing up on every site.
+
+- **/drupal-data/themes** - All contributed and custom themes and subthemes. Please note that subthemes do require the base theme to be installed here as well.
+
+- **/mysql-data** - Contains MySQL data to persist your database.
+
+- **/nginx-conf** - The drupal nginx vhost configuration.
 
 ## Requirements
 
