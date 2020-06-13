@@ -24,7 +24,7 @@ To improve the performance specially on Mac users that are experiencing slowness
 
 - **/drupal-data/modules** - The directory into which all custom (created by you) and contributed (created by community) modules go.
 
-  - Splitting this up into the sub-directories contrib and custom can make it easier to keep track of the modules. You can create subfolders for organization to match your development, storage, usage standards.
+  - Splitting this up into the sub-directories **contrib** and **custom** can make it easier to keep track of the modules. You can create subfolders for organization to match your development, storage, usage standards.
 
 - **/drupal-data/profiles** - All contributed and custom installation profiles.
 
