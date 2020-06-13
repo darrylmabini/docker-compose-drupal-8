@@ -40,7 +40,7 @@ To improve the performance specially on Mac users that are experiencing slowness
 
 - **/drupal-data/themes** - All contributed and custom themes and subthemes. Please note that subthemes do require the base theme to be installed here as well.
 
-- **/mysql-data** - Contains MySQL data to persist your database.
+- **/mariadb-data** - Contains MySQL data to persist your database.
 
 - **/nginx/conf.d** - The drupal nginx vhost configuration.
 
