@@ -1,8 +1,8 @@
 # Drupal 8 Docker Compose Development
 
 - [Overview](#overview)
-- [Directory Structure](#directory-structure)
 - [Requirements](#requirements)
+- [Directory Structure](#directory-structure)
 - [Installation](#installation)
   - [Starting Containers](#starting-containers)
   - [Stopping Containers](#stopping-containers)
@@ -20,6 +20,11 @@ This stack is to easily setup [Drupal 8](https://www.drupal.org/8) local develop
 
 To improve the performance specially on Mac users that are experiencing slowness on mounted volumes, this only mounts the necessary directories in drupal development which are the **sites**, **modules** and **themes** directories.
 
+## Requirements
+
+- [Docker engine 18+](https://docs.docker.com/install)
+- [Docker compose 1.24+](https://docs.docker.com/compose/install)
+
 ## Directory Structure
 
 - **/drupal-data/modules** - The directory into which all custom (created by you) and contributed (created by community) modules go.
@@ -30,7 +35,7 @@ To improve the performance specially on Mac users that are experiencing slowness
 
 - **/drupal-data/sites** - Site specific configurations such us database connection settings, services settings, etc. can be found in inside this directory.
 
-  - For multi-site setup that contains site-specific modules and themes can also be moved into this directory to avoid them showing up on every site.
+  - Site specific modules and themes for multi-site setup can be moved into this directory to avoid them showing up on every site.
   - It also contains the storage of site-specific files. This includes files uploaded by users (such as images) and site configuration (**active** and **staged**).
 
 - **/drupal-data/themes** - All contributed and custom themes and subthemes. Please note that subthemes do require the base theme to be installed here as well.
@@ -38,11 +43,6 @@ To improve the performance specially on Mac users that are experiencing slowness
 - **/mysql-data** - Contains MySQL data to persist your database.
 
 - **/nginx-conf** - The drupal nginx vhost configuration.
-
-## Requirements
-
-- [Docker engine 18+](https://docs.docker.com/install)
-- [Docker compose 1.24+](https://docs.docker.com/compose/install)
 
 ## Installation
 
