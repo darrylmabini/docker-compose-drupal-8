@@ -42,7 +42,7 @@ To improve the performance specially on Mac users that are experiencing slowness
 
 - **/mysql-data** - Contains MySQL data to persist your database.
 
-- **/nginx-conf** - The drupal nginx vhost configuration.
+- **/nginx/conf.d** - The drupal nginx vhost configuration.
 
 ## Installation
 
