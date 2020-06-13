@@ -42,7 +42,7 @@ services:
       - ./drupal-data/sites:/var/www/html/sites
       - ./drupal-data/modules:/var/www/html/modules
       - ./drupal-data/themes:/var/www/html/themes
-      - ./nginx-conf:/etc/nginx/conf.d
+      - ./nginx/conf.d:/etc/nginx/conf.d
     networks:
       - internal
       - external
