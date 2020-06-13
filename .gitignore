@@ -1,0 +1,8 @@
+.env
+drupal-data/modules/*
+!drupal-data/modules/README.txt
+drupal-data/themes/*
+!drupal-data/themes/README.txt
+drupal-data/sites/default/files
+drupal-data/sites/default/files/settings.php
+mysql-data
