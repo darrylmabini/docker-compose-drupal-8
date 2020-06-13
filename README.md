@@ -77,7 +77,7 @@ docker-compose down
 
 ### Installing PHP Extensions _(Optional)_
 
-Let's say you want to add the opcache php extension, you can simple to it by running this command
+Let's say you want to add the opcache php extension, you can simply do it by running this command
 
 ```bash
 docker-compose exec drupal apk php7-opcache
