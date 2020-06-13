@@ -18,7 +18,7 @@ This stack is to easily setup [Drupal 8](https://www.drupal.org/8) local develop
 - [MySQL](https://hub.docker.com/_/mysql)
 - [NGINX](https://hub.docker.com/_/nginx)
 
-To improve the performance specially on Mac users that are experiencing slowness on mounted volumes, this only mounts the necessary directories in drupal development which are the **sites**, **modules** and **themes** directories.
+To improve the performance specially on Mac users that are experiencing slowness on mounted volumes, this only mounts the necessary directories in drupal development which are the **sites**, **modules**, **themes** and **profiles** directories.
 
 ## Requirements
 
