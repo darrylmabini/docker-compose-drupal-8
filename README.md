@@ -29,13 +29,13 @@ To improve the performance specially on Mac users that are experiencing slowness
 Clone the repository
 
 ```bash
-git clone https://github.com/darrylmabini/docker-compose-drupal-8.git drupal8-project_name
+git clone https://github.com/darrylmabini/docker-compose-drupal-8.git drupal8-project-name
 ```
 
 CD into the project directory
 
 ```bash
-cd drupal8-project_name
+cd drupal8-project-name
 ```
 
 Create **.env** file
