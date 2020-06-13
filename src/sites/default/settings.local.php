@@ -26,3 +26,5 @@ foreach ($cache_bins as $bin) {
 }
 
 $settings['extension_discovery_scan_tests'] = FALSE;
+
+$settings['form_cache_expiration'] = 0;

@@ -789,9 +789,11 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  * Keep this code block at the end of this file to take full effect.
  */
 #
-# if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-#   include $app_root . '/' . $site_path . '/settings.local.php';
-# }
+
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+  include $app_root . '/' . $site_path . '/settings.local.php';
+}
+
 $databases['default']['default'] = array (
   'database' => 'drupal8_playground',
   'username' => 'root',
@@ -802,4 +804,5 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
+
 $config_directories['sync'] = 'sites/default/files/config_JmvJ_ei-uGDnYV1oP_68yQRik-FlkL9lhLq75H0SGPhX2I3zFR_j3nrpbavwIwVggzypSM_5aA/sync';

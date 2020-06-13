@@ -27,22 +27,24 @@ To improve the performance specially on Mac users that are experiencing slowness
 
 ## Directory Structure
 
-- **/drupal-data/modules** - The directory into which all custom (created by you) and contributed (created by community) modules go.
+- **/src/modules** - The directory into which all custom (created by you) and contributed (created by community) modules go.
 
   - Splitting this up into the sub-directories **contrib** and **custom** can make it easier to keep track of the modules. You can create subfolders for organization to match your development, storage, usage standards.
 
-- **/drupal-data/profiles** - All contributed and custom installation profiles.
+- **/src/profiles** - All contributed and custom installation profiles.
 
-- **/drupal-data/sites** - Site specific configurations such us database connection settings, services settings, etc. can be found in inside this directory.
+- **/src/sites** - Site specific configurations such us database connection settings, services settings, etc. can be found in inside this directory.
 
   - Site specific modules and themes for multi-site setup can be moved into this directory to avoid them showing up on every site.
   - It also contains the storage of site-specific files. This includes files uploaded by users (such as images) and site configuration (**active** and **staged**).
 
-- **/drupal-data/themes** - All contributed and custom themes and subthemes. Please note that subthemes do require the base theme to be installed here as well.
+- **/src/themes** - All contributed and custom themes and subthemes. Please note that subthemes do require the base theme to be installed here as well.
 
-- **/db-data** - Contains MySQL data to persist your database.
+- **/docker/db-data** - Contains MySQL data to persist your database.
 
-- **/nginx/conf.d** - The drupal nginx vhost configuration.
+- **/docker/nginx/conf.d** - Contains Drupal NGINX vhost configuration.
+
+- **/docker/php-fpm** - Contains PHP configurations.
 
 ## Installation
 

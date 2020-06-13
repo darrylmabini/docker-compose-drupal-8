@@ -10,7 +10,7 @@ services:
     ports:
       - 3306:3306
     volumes:
-      - ./db-data:/var/lib/mysql
+      - ./docker/db-data:/var/lib/mysql
     networks:
       - internal
       - external
@@ -25,9 +25,10 @@ services:
       - internal
     volumes:
       - drupal-data:/var/www/html
-      - ./drupal-data/sites:/var/www/html/sites
-      - ./drupal-data/modules:/var/www/html/modules
-      - ./drupal-data/themes:/var/www/html/themes
+      - ./docker/php-fpm/php.ini:/usr/local/etc/php/php.ini
+      - ./src/sites:/var/www/html/sites
+      - ./src/modules:/var/www/html/modules
+      - ./src/themes:/var/www/html/themes
 
   webserver:
     image: nginx:1.17.4-alpine
@@ -39,9 +40,9 @@ services:
       - 80:80
     volumes:
       - drupal-data:/var/www/html
-      - ./drupal-data/sites:/var/www/html/sites
-      - ./drupal-data/modules:/var/www/html/modules
-      - ./drupal-data/themes:/var/www/html/themes
+      - ./src/sites:/var/www/html/sites
+      - ./src/modules:/var/www/html/modules
+      - ./src/themes:/var/www/html/themes
       - ./nginx/conf.d:/etc/nginx/conf.d
     networks:
       - internal
