@@ -57,19 +57,19 @@ MYSQL_USER=drupal_database_user
 MYSQL_PASSWORD=drupal_database_password
 ```
 
-### Starting Containers
+### Starting containers
 
 ```bash
 docker-compose up -d
 ```
 
-### Stopping Containers
+### Stopping containers
 
 ```bash
 docker-compose stop
 ```
 
-### Destroying Containers
+### Destroying containers
 
 ```bash
 docker-compose down
