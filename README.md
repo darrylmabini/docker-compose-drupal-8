@@ -28,7 +28,10 @@ To improve the performance specially on Mac users that are experiencing slowness
 
 - **/drupal-data/profiles** - All contributed and custom installation profiles.
 
-- **/drupal-data/sites** - Site specific configurations such us database connection settings, services settings, etc. can be found in inside this directory. For multi-site setup that contains site-specific modules and themes can also be moved into this directory to avoid them showing up on every site. It also contains the storage of site-specific files. This includes files uploaded by users (such as images) and site configuration (**active** and **staged**).
+- **/drupal-data/sites** - Site specific configurations such us database connection settings, services settings, etc. can be found in inside this directory.
+
+  - For multi-site setup that contains site-specific modules and themes can also be moved into this directory to avoid them showing up on every site.
+  - It also contains the storage of site-specific files. This includes files uploaded by users (such as images) and site configuration (**active** and **staged**).
 
 - **/drupal-data/themes** - All contributed and custom themes and subthemes. Please note that subthemes do require the base theme to be installed here as well.
 
