@@ -6,5 +6,5 @@ src/profiles/*
 src/themes/*
 !src/themes/README.txt
 src/sites/default/files
-src/sites/default/files/settings.php
+src/sites/default/settings.php
 db-data
